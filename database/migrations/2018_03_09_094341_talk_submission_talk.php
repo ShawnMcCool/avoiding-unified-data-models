@@ -2,8 +2,9 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
-class TalkSubmissionSpeaker extends Migration {
+class TalkSubmissionTalk extends Migration {
 
     /**
      * Run the migrations.
@@ -11,13 +12,12 @@ class TalkSubmissionSpeaker extends Migration {
      * @return void
      */
     public function up() {
-        Schema::create('talk_submission_speakers', function(Blueprint $t) {
+        Schema::create('talk_submission_talks', function (Blueprint $t) {
             $t->increments('id');
-            $t->integer('userId');
-            $t->string('name');
-            $t->string('contactEmail');
-            $t->text('bioText');
-            $t->string('imageUrl');
+            $t->integer('speakerId');
+            $t->string('title');
+            $t->text('description');
+            $t->text('notesForOrganizers');
             $t->timestamps();
         });
     }
@@ -28,6 +28,6 @@ class TalkSubmissionSpeaker extends Migration {
      * @return void
      */
     public function down() {
-        Schema::drop('talk_submission_speakers');
+        Schema::drop('talk_submission_talks');
     }
 }

@@ -5,7 +5,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Speaker extends Model {
 
-    protected $table = 'talk_submission_speaker';
+    protected $table = 'talk_submission_speakers';
     protected $fillable = ['userId', 'name', 'contactEmail', 'bioText', 'imageUrl'];
 
     public static function register(UserAuthentication $user, $name, $contactEmail, $bioText, $imageUrl) {
@@ -19,6 +19,6 @@ class Speaker extends Model {
     }
 
     public static function forUser(UserAuthentication $user) {
-        return static::where('userId', '=', $user->id)->first;
+        return static::where('userId', '=', $user->id)->first();
     }
 }
