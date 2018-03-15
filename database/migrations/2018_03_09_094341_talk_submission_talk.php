@@ -14,10 +14,15 @@ class TalkSubmissionTalk extends Migration {
     public function up() {
         Schema::create('talk_submission_talks', function (Blueprint $t) {
             $t->increments('id');
-            $t->integer('speakerId');
             $t->string('title');
             $t->text('description');
             $t->text('notesForOrganizers');
+            $t->integer('speakerId');
+            $t->string('speakerName');
+            $t->string('speakerContactEmail');
+            $t->text('speakerBioText');
+            $t->string('speakerImageUrl');
+            $t->integer('approvedByOrganizerId');
             $t->timestamps();
         });
     }

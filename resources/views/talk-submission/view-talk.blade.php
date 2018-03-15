@@ -1,8 +1,8 @@
 <h1>Title: {{ $talk->title }}</h1>
-
-<p>Description: {{ $talk->description }}</p>
-
-<p>Notes: {{ $talk->notesForOrganizers }}</p>
+<p>
+    Description: {{ $talk->description }}<br/>
+    Notes: {{ $talk->notesForOrganizers }}
+</p>
 
 <p>
     Speaker: {{ $talk->speaker->name }}<br/>

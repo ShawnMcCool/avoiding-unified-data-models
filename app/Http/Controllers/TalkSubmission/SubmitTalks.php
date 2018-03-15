@@ -27,12 +27,14 @@ class SubmitTalks extends Controller {
 
     public function submitTalk(Request $request) {
         // form validation
-        Talk::submit(
+
+        $talk = Talk::submit(
             $this->speaker(),
             $request->get('title'),
             $request->get('description'),
             $request->get('notesForOrganizers')
         );
+
         return redirect('/submit-talks');
     }
 
