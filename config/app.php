@@ -161,6 +161,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         \App\TalkSubmission\TalkSubmissionServiceProvider::class,
         \App\TalkApproval\TalkApprovalServiceProvider::class,
+        \App\Scheduling\SchedulingServiceProvider::class,
 
     ],
 

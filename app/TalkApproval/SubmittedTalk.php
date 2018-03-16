@@ -61,6 +61,5 @@ class SubmittedTalk extends Model {
         $talk->save();
 
         event(new TalkWasApproved($talk->id, $talk->title, $talk->description, $talk->notes, $talk->speakerId, $talk->speakerName, $talk->speakerEmail, $talk->speakerBio, $talk->speakerImage));
-
     }
 }

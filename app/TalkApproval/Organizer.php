@@ -11,4 +11,8 @@ class Organizer extends Model {
     public static function forUser(UserAuthentication $user) {
         return static::where('userId', '=', $user->id)->first();
     }
+
+    public static function register($userId, $name) {
+        static::create(compact('userId', 'name'));
+    }
 }
