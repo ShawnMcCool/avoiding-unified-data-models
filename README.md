@@ -1,4 +1,4 @@
-This is the readme for a talk on Avoiding Unified Data Models. 
+This repo is functional source code for the talk on Avoiding Unified Data Models. 
 
 # Installation
 
@@ -20,7 +20,7 @@ Set up the framework.
 
 ```
 host$ vagrant ssh
-vm$ cp laravel/.env.example laravel/.env
+vm$ cp .env.example .env
 vm$ php artisan key:generate
 vm$ php artisan migrate
 ```
