@@ -18,6 +18,10 @@ Route::get('/view-talk/{talkId}', function($talkId) {
     ]);
 });
 
+Route::get('/json-response', function() {
+    return \App\TalkSubmission\Speaker::first();
+});
+
 Auth::routes();
 
 // hack - so that we don't have to build user management
