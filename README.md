@@ -1,5 +1,20 @@
 This repo is functional source code for the talk on Avoiding Unified Data Models. 
 
+# Source Examples 
+
+These are the files referenced in the slides in the order that they appear in the talk.
+
+- https://github.com/ShawnMcCool/avoiding-unified-data-models/blob/master/database/migrations/2014_10_12_000000_create_user_authentication_and_password_reset_tables.php
+- https://github.com/ShawnMcCool/avoiding-unified-data-models/blob/master/app/UserAuthentication.php
+- https://github.com/ShawnMcCool/avoiding-unified-data-models/blob/master/app/Http/Controllers/TalkSubmission/Welcome.php
+- https://github.com/ShawnMcCool/avoiding-unified-data-models/blob/master/app/TalkSubmission/Speaker.php
+- https://github.com/ShawnMcCool/avoiding-unified-data-models/blob/master/database/migrations/2018_03_09_124503_talk_approval_organizers.php
+- https://github.com/ShawnMcCool/avoiding-unified-data-models/blob/master/database/migrations/2018_03_09_124722_talk_approval_talks.php
+- https://github.com/ShawnMcCool/avoiding-unified-data-models/blob/master/app/Http/Controllers/TalkApproval/ApproveTalks.php
+- https://github.com/ShawnMcCool/avoiding-unified-data-models/blob/master/app/Events/TalkWasSubmitted.php
+- https://github.com/ShawnMcCool/avoiding-unified-data-models/blob/master/app/TalkSubmission/Talk.php
+- https://github.com/ShawnMcCool/avoiding-unified-data-models/blob/master/app/TalkApproval/RegisterSubmittedTalk.php
+
 # Installation
 
 ```
