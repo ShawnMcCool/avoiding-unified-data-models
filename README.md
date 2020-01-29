@@ -1,5 +1,7 @@
 This repo is functional source code for the talk on Avoiding Unified Data Models. 
 
+[Find the talk here.](https://www.youtube.com/watch?v=jPnhTxRfOVk)
+
 # Source Examples 
 
 These are the files referenced in the slides in the order that they appear in the talk.
